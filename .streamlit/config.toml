@@ -1,2 +1,13 @@
 [server]
-folderWatchBlacklist = ["torch"]
+# We'll try disabling it completely first.
+# If this works, then the blacklist wasn't specific enough or wasn't being applied correctly.
+fileWatcherType = "none"
+
+# You can leave this commented out or remove it for now,
+# as fileWatcherType = "none" overrides it.
+# folderWatchBlacklist = ["torch"]
+
+[theme]
+# Add this line just to test if config.toml is being read AT ALL
+# If your app theme turns red, you know the file is being processed.
+primaryColor="#FF0000"
